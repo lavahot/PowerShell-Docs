@@ -152,10 +152,12 @@ PS C:\> "a", "b", "c", "c", "d" | Get-Unique
 a
 b
 c
-d PS C:\> "a", "b", "c", "c", "d" | Group-Object -NoElement | Where {$_.Count -gt 1}
+d 
+PS C:\> "a", "b", "c", "c", "d" | Group-Object -NoElement | Where {$_.Count -gt 1}
 Count Name
 ----- ----
-2     c PS C:\> Get-Process | Group-Object -Property Name -NoElement | Where {$_.count -gt 1}
+2     c 
+PS C:\> Get-Process | Group-Object -Property Name -NoElement | Where {$_.count -gt 1}
 Count Name
 ----- ----
 2     csrss
